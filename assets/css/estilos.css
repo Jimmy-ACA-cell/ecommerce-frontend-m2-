@@ -1,0 +1,89 @@
+
+:root{
+  --accent: #d99b5c;
+  --muted: rgba(255,255,255,0.85);
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body{
+  background-image: url("../assets/img/bg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+/* overlay */
+.bg-overlay{
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0.55), rgba(0,0,0,0.7));
+  z-index: 0;
+}
+
+/* contenido encima del overlay */
+header, main, footer { position: relative; z-index: 1; }
+
+/* navbar */
+.navbar-custom{
+  background: transparent;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* cards */
+.card-product{
+  background: rgba(255,255,255,0.06);
+  border: none;
+  backdrop-filter: blur(4px);
+  color: var(--muted);
+  transition: transform .18s ease, box-shadow .18s ease;
+  border-radius: 14px;
+}
+
+.card-product:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* botones */
+.btn-warning{
+  background: var(--accent);
+  border: none;
+  color: #2b1b10;
+}
+
+#cart-total{
+    color: #fff !important;
+}
+
+#total-text{
+    color: #fff !important;
+}
+
+/* precio destacado */
+.price{
+  font-weight:700;
+  color: #fff;
+}
+
+
+/* footer */
+.footer-custom{
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.45));
+  position: relative;
+  z-index:1;
+}
+
+
+/* Responsividad */
+@media (max-width:420px){
+  .display-5{ font-size:1.6rem; }
+  .card-product img{ height:160px; object-fit:cover; }
+}
