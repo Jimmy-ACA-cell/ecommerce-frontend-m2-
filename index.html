@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sello de Autor, Specialty Coffee Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+
+<body>
+    <div class="bg-overlay"></div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html"><strong>Sello de Autor,</strong> Specialty Coffee
+                    Store.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item me-3"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item me-3"><a class="nav-link" href="carrito.html">Carrito
+                                <span id="cart-badge" class="badge bg-danger ms-1">0</span>
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container text-white">
+            <section class="text-center my-5">
+                <h1 class="display-5 fw-bold">Café de especialidad & equipamiento barista</h1>
+                <p class="lead">Máquinas espresso, molinos, tostadoras y todo lo necesario para montar tu cafetería.</p>
+                <a href="#productos" class="btn btn-outline-light btn-lg">Ver Productos</a>
+            </section>
+
+            <section id="productos" class="mb-5">
+                <div class="row" id="products-grid">
+                    <!-- Aquí van las "cards" generadas o renderizadas con JS -->
+                </div>
+            </section>
+
+            <section id="contacto" class="py-4">
+                <div class="card bg-dark bg-opacity-50 text-white p-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Contacto</h4>
+                            <p>¿Dudas? Escríbenos a <a href="mailto:ventas@specialtycoffee.example"
+                                    class="text-warning">ventas@selloautorcoffee.com</a></p>
+                        </div>
+                        <div class="col-md-4 text-md-end">
+                            <small> Villa Alegre · Chile</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center text-white py-3 footer-custom">
+        <div class="container">
+            <p>Sello de Autor, Specialty Coffee Store — Importación y venta de equipo barista</p>
+            <small>& 2025 Sello de Autor, Specialty Coffee Store. todos loa derechos reservados</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
